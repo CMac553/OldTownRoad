@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript"></script>
+
+  <script>
+
+	playRoshambo = function(clientGesture){
+
+	 	if (clientGesture=='rock') {
+		result = "tie";
+
+	 }
+
+	 	if (clientGesture=='paper') {
+		result = "win";
+
+	 }  
+
+	 	if (clientGesture=='scissors') {
+		result = "lose";
+
+	 }    
+
+	 alert("You " + result + "!");
+
+	}
+
+
+  </script>
+
+  </head>
+
+    <body>
+    	<h1 id ="greeting">Hi, glad you are here. Let's begin the game of Rock, Paper, Scissors!</h1>
+    	<p>Click the button to get started.</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p id="demo"></p>
+
+	<script>
+	function myFunction() {
+  	var person = prompt("Please enter your name", "First and Last name");
+  		if (person != null) {
+    	document.getElementById("demo").innerHTML =
+    "	Hello " + person + "! How are you today?";
+  }
+
+}
+</script>
+
+    	<script type="text/javascript" src="javascript/playRoshambo.js"></script>
+
+    	 </div>
+
+    <div class="container">
+    	<div class="row">
+        <div class="col-sm-4">
+            <div class="card text-white">
+            	<a class ="btn btn-danger" href="#" onclick="playRoshambo('rock')">Rock</a>
+                <div class="card-header bg-success">Select the word "Rock" in the red box to begin the game.</div>
+                <div class="card-body bg-danger">
+                   <img src="https://i.ytimg.com/vi/27dZ5mJBnBY/maxresdefault.jpg" height= 250px width= 250px>
+                    <p class="card-text">Rock, Paper, Scissors is a popular game. Does rock crush scissors?</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-white">
+            	<a class="btn btn-primary" href="#" onclick="playRoshambo('paper')">paper</a>
+                <div class="card-header bg-secondary">Select the word "Paper" in the blue box above.</div>
+                <div class="card-body bg-primary">
+                    <img src="https://images.pexels.com/photos/2003849/pexels-photo-2003849.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height= 150px width 150px>
+                    <p class="card-text">Does a play of paper lose to a play of scissors? Let's see</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-white">
+            	<a class="btn btn-warning" href="#" onclick="playRoshambo('scissors')">scissors</a>
+                <div class="card-header bg-success">Select the word "Scissors" in the yellow box above</div>
+                <div class="card-body bg-warning">
+                  <img src="https://images-na.ssl-images-amazon.com/images/I/511JEPNGDNL._SY445_.jpg" height= 300px width 300px>
+                    <p class="card-text">Do you think scissors cut paper or cover paper?</p>
+                </div>
+            </div>
+        </div>
+  	</div>
+</div>
+
+        </div>
+
+
+ 	 <script src="playRoshambo.js"></script>
+   </body>
+</html>
