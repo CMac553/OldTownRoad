@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+    <html lang="en" xmlns="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Changes page</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+
+       Did you want to change this?
+        <a th:href="@{/new}">
+            <button type="button">Make a new to do</button>
+        </a>
+        <a th:href="@{/}">
+            <button type="button">Change to do</button>
+        </a>
+        
+    </body>
+</html>
